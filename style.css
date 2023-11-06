@@ -1,7 +1,7 @@
 .cat-color{
     background-color: #fab658;
     color: #625358;
-};
+}
 body {
     color: #6f3728;
     background-color: #f3b6c6;
@@ -10,6 +10,7 @@ body {
 }
 .section {
     margin: auto; 
+}
 .shadow {
     background-color: #eae7e2;
 }
