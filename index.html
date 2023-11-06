@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+
+	<title>Cat 2 App</title>
+</head>
+
+<body>
+
+<h1>Calico Cats</h1>
+<h2>Genetics Simulator</h2>
+
+<p>Calicos are cats with a mix of black, red (or orange), and white spots. Many cultures believe they bring good fortune, and have granted them nicknames such as "lucky cats" and "money cats".</p>
+<p>Whether or not they actually bring good luck is up for debate, but calicos have another peculiarity that sets them apart: They are, except in rare genetic circumstances, always female.</p>
+<h3>Calico Genetics</h3>
+<p>The genes that determine a cat's fur color exist only on the X chromosome. Since female cats have two X chromosomes, they can have two colors at the same time.</p>
+<h3>(insert graphic later)</h3>
+
+<p>Lets put it into practice.</p>
+<h3>Choose a parent cat:</h3>
+
+
+
+
+<fieldset>
+<input type="radio" name="cat" value="redFemale"> Red Mother
+<input type="radio" name="cat" value="blackFemale"> Black Mother
+</fieldset>
+<br />
+<fieldset>
+<input type="radio" name="male" value="redMale"> Red Father
+<input type="radio" name="male" value="blackMale"> Black Father
+</fieldset>
+<br />
+
+<button id="tortieButton" type="submit">Submit</button>
+
+<h3>Your kitten is a <span id="fatherChroma">?</span> cat.</h3>
+
+<h3 id="firstTest">Did it work?</h3>
+
+<br />
+<p>Now that you have a tortoiseshell, all you have to do is add white patches to get a calico. Fortunately, white is a dominant gene in cats, so only ine parent needs to have white patches to pass it on to the kitten</p>
+<h3>Choose your kitten's parents:</h3>
+
+<fieldset>
+<input type="radio" name="motherTwo" value="redFemale"> Red Mother
+<input type="radio" name="motherTwo" value="blackFemale"> Black Mother
+<input type="radio" name="motherTwo" value="redFemalePatched"> Red Mother with Patches
+<input type="radio" name="motherTwo" value="blackFemalePatches"> Black Mother with Patches
+<input type="radio" name="motherTwo" value="tortie"> Tortoiseshell Mother
+<input type="radio" name="motherTwo" value="calico"> Calico Mother
+</fieldset>
+<br />
+<fieldset>
+<input type="radio" name="maleTwo" value="redMale"> Red Father
+<input type="radio" name="maleTwo" value="blackMale"> Black Father
+<input type="radio" name="maleTwo" value="redMalePatches"> Red Father with Patches
+<input type="radio" name="maleTwo" value="blackMalePatches"> Black Father with Patches
+</fieldset>
+<br />
+
+<button id="calicoButton" type="submit">Submit</button>
+
+<p>TESTING THE <span id="tester">TEST</span></p>
+
+<script type="text/javascript" src="index2.js"></script>
+</body>
+
+</html>
+
