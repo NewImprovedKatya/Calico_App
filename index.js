@@ -41,20 +41,23 @@ const catList = {
     },
   };
   
- 
-  alert("working");
-  
 
   const radioButtons = document.querySelectorAll('input[name="cat"]');
   const secondradioButtons = document.querySelectorAll('input[name="male"]');
   const thirdButtons = document.querySelectorAll('input[name="motherTwo"]');
   const fourthButtons = document.querySelectorAll('input[name="maleTwo"]');
   
-  const fatherChromaSpan = document.querySelector('#fatherChroma');
+
   const testerSpan = document.querySelector('#tester');
   
   const submitButton = document.querySelector("#tortieButton");
   const secondsubmitButton = document.querySelector("#calicoButton");
+
+const firstKitten = document.querySelector("#firstKitten");
+const secondKitten = document.querySelector("#secondKitten");
+const thirdKitten= document.querySelector("#thirdKitten");
+const fourthKitten = document.querySelector("#fourthKitten");
+
 
 
 
@@ -63,26 +66,38 @@ const catList = {
     const selectedCat = document.querySelector('input[name="cat"]:checked').value;
     const secondselectedCat = document.querySelector('input[name="male"]:checked').value;
   
+let results= [];
+
+for (let i = 0; i < 4; i++) {
+
+
     const kitten = {
       chroma: [catList[selectedCat].chroma[Math.round(Math.random()*1)], 
       catList[secondselectedCat].chroma[Math.round(Math.random()*1)]]
     };
   
-    let coatColor;
+ 
     if (kitten.chroma.includes("red") && kitten.chroma.includes("black")) {
-      coatColor = "female tortoiseshell";
+      results.push(" tortoiseshell female");
     } else if (kitten.chroma.includes("red") && kitten.chroma.includes("Y")) {
-      coatColor = "male red";
+      results.push("red male");
     } else if (kitten.chroma.includes("black") && kitten.chroma.includes("Y")) {
-      coatColor = "black male";
+      results.push("black male");
     } else if (kitten.chroma.includes("red")) {
-      coatColor = "red female";
+      results.push("red female");
     } else {
-      coatColor = "black female";
+      results.push("black female");
     };
-  
-    fatherChromaSpan.textContent = coatColor;
+
+};
+
+firstKitten.textContent = results[0];
+secondKitten.textContent = results[1];
+thirdKitten.textContent = results[2];
+fourthKitten.textContent = results[3];
   });
+
+
   
 
   secondsubmitButton.addEventListener('click', () => {
@@ -125,5 +140,3 @@ const catList = {
       testerSpan.textContent = coatOneColor;
     
   });
-  
-  
