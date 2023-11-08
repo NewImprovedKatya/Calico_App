@@ -1,4 +1,4 @@
-.cat-color{
+cat-color{
     background-color: #fab658;
     color: #625358;
 }
@@ -7,9 +7,15 @@ body {
     background-color: #f3b6c6;
     margin: 0;
     text-align: center;
+	font-size: 4rm;
 }
 .section {
-    margin: auto; 
+    margin: auto 20px;
+	background-color: #ffffff99;
+	padding: 20px;
+	border-radius: 12px;
+	height: 100%vh;
+
 }
 .shadow {
     background-color: #eae7e2;
@@ -17,7 +23,10 @@ body {
 input[type='radio'] { 
     transform: scale(2);
     accent-color: #fab658; 
-    margin: 5px;
+	margin: 9px;
 }
-
-
+button {
+	background-color: #625358;
+	padding: 10px;
+	border-radius: 12px;
+}
