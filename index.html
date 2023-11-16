@@ -27,11 +27,12 @@
 
 
 <fieldset>
-<label>
-<input type="radio" name="cat" value="redFemale"> Red Mother
+
+<input type="radio" name="cat" value="redFemale" id="redFemale">
+<label class="sprite" for="redFemale">
 </label>
-<label>
-<input type="radio" name="cat" value="blackFemale"> Black Mother
+
+<input type="radio" id="blackFemale" name="cat" value="blackFemale"><label style="background-position: -200px 0;" class="sprite" for="blackFemale">
 </label>
 </fieldset>
 
@@ -39,11 +40,10 @@
 
 <br />
 <fieldset>
-	<label>
-<input type="radio" name="male" value="redMale"> Red Father
+	
+<input type="radio" id="redMale" class="input-hidden" name="male" value="redMale"><label class="sprite" for="redMale">
 	</label>
-	<label>
-<input type="radio" name="male" value="blackMale"> Black Father
+<input type="radio" id="blackMale" class="input-hidden" name="male" value="blackMale"> <label style="background-position: -200px 0;" class="sprite" for="blackMale">
 	</label>
 </fieldset>
 <br />
@@ -57,6 +57,14 @@
 <h3 id="thirdKitten"></h3>
 <h3 id="fourthKitten"></h3>
 
+<img class="kitten" id="kitten1" src="placeholder.png">
+
+<img class="kitten" id="kitten2" src="placeholder.png">
+
+<img class="kitten" id="kitten3" src="placeholder.png">
+
+<img class="kitten" id="kitten4" src="placeholder.png">
+
 
 
 <h3 id="firstTest">Did you get a tortoiseshell cat? If not, hit submit again for a new litter or try different parent combinations</h3>
@@ -66,38 +74,27 @@
 <h3>Choose your kitten's parents:</h3>
 
 <fieldset>
-	<label>
-<input type="radio" name="motherTwo" value="redFemale"> Red Mother
+	
+<input type="radio" name="motherTwo" id="redMother" value="redFemale"> <label for="redMother" class="sprite">
 	</label>
-	<label>
-<input type="radio" name="motherTwo" value="blackFemale"> Black Mother
+
+<input type="radio" name="motherTwo" id="blackMother" value="blackFemale"> <label style="background-position: -200px 0;" for="blackMother" class="sprite">
 	</label>
-	<label>
-<input type="radio" name="motherTwo" value="redFemalePatches"> Red Mother with Patches
+<input type="radio" name="motherTwo" id="redMotherW" value="redFemalePatches"> <label style="background-position: 0 -200px;" for="redMotherW" class="sprite">
 	</label>
-	<label>
-<input type="radio" name="motherTwo" value="blackFemalePatches"> Black Mother with Patches
-	</label>
-	<label>
-<input type="radio" name="motherTwo" value="tortie"> Tortoiseshell Mother
-	</label>
-	<label>
-<input type="radio" name="motherTwo" value="calico"> Calico Mother
+<input type="radio" name="motherTwo" id="blackMotherW" value="blackFemalePatches"> <label style="background-position: -200px -200px;" for="blackMotherW" class="sprite">
 	</label>
 </fieldset>
 <br />
+<h3>Choose a father cat:</h3>
 <fieldset>
-	<label>
-<input type="radio" name="maleTwo" value="redMale"> Red Father
+<input type="radio" id="redFather" name="maleTwo" value="redMale"> <label for="redFather" class="sprite">
 	</label>
-	<label>
-<input type="radio" name="maleTwo" value="blackMale"> Black Father
+<input type="radio" id="blackFather" name="maleTwo" value="blackMale"> <label style="background-position: -200px 0;" for="blackFather" class="sprite">
 	</label>
-	<label>
-<input type="radio" name="maleTwo" value="redMalePatches"> Red Father with Patches
+<input type="radio" id="redFatherW" name="maleTwo" value="redMalePatches"> <label style="background-position: 0 -200px;" for="redFatherW" class="sprite">
 	</label>
-	<label>
-<input type="radio" name="maleTwo" value="blackMalePatches"> Black Father with Patches
+<input type="radio" id="blackFatherW" id="blackFatherW" name="maleTwo" value="blackMalePatches"> <label style="background-position: -200px -200px;" for="blackFatherW" class="sprite">
 	</label>
 </fieldset>
 <br />
@@ -105,10 +102,21 @@
 <button id="calicoButton" type="submit">Submit</button>
 
 <h3>Your kitten is a <span id="tester">?</span> cat!</h3>
+
+<img class="kitten" id="kitten5" src="placeholder.png">
+
+<img class="kitten" id="kitten6" src="placeholder.png">
+
+<img class="kitten" id="kitten7" src="placeholder.png">
+
+<img class="kitten" id="kitten8" src="placeholder.png">
+
+
+
+
 </div>
 
 <script type="text/javascript" src="index.js"></script>
 </body>
 
 </html>
-
