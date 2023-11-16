@@ -1,7 +1,41 @@
-cat-color{
-    background-color: #fab658;
-    color: #625358;
+
+.cat {
+	background-color: #fab658;
+	height: 20px;
+	width: 40px;
+	margin:20px;
+
 }
+
+input[type=radio]{display:none;}
+
+input[type=radio] + label.sprite{
+display:inline-block;
+cursor: pointer;
+outline: 0; 
+width: 200px;
+height: 200px;
+background-image: url(cat.png);
+background-repeat: no-repeat;
+text-indent: -99999px;
+margin: 20px;
+}
+
+input[type=radio]:checked + label.sprite{
+  border: 1px solid #fff;
+  box-shadow: 0 0 3px 3px #625358;
+}
+img {
+	height: 200px;
+	width: 200px;
+}
+
+.pic {
+	height: 200px;
+	width: 200px;
+	background-image: url("corgi.png");
+}
+
 body {
     color: #6f3728;
     background-color: #f3b6c6;
@@ -10,23 +44,27 @@ body {
 	font-size: 4rm;
 }
 .section {
-    margin: auto 20px;
-	background-color: #ffffff99;
+    margin: 20px ;
+	background-color: #fbe3e8;
 	padding: 20px;
 	border-radius: 12px;
 	height: 100%vh;
+    box-shadow: 0 0 12px 8px #fbe3e8;
 
 }
 .shadow {
     background-color: #eae7e2;
-}
-input[type='radio'] { 
-    transform: scale(2);
-    accent-color: #fab658; 
-	margin: 9px;
 }
 button {
 	background-color: #625358;
 	padding: 10px;
 	border-radius: 12px;
 }
+.kitten {
+	height: 150px;
+  width: 130px;
+
+	background: url('cat.png') -5px -2225px;
+  
+}
+
