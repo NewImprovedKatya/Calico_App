@@ -42,8 +42,6 @@ const catList = {
 };
 
 
-alert("working");
-
 
 const radioButtons = document.querySelectorAll('input[name="cat"]');
 const secondRadioButtons = document.querySelectorAll('input[name="male"]');
