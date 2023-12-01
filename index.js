@@ -49,7 +49,7 @@ const thirdButtons = document.querySelectorAll('input[name="motherTwo"]');
 const fourthButtons = document.querySelectorAll('input[name="maleTwo"]');
 
 
-const testerSpan = document.querySelector('#tester');
+const congrats = document.querySelector('#congrats');
 
 const submitButton = document.querySelector("#tortieButton");
 const secondSubmitButton = document.querySelector("#calicoButton");
@@ -150,7 +150,12 @@ for (let i = 0; i < 4; i++) {
     };
 };
   
-    testerSpan.textContent = coatOneColor;
+    let calicoCount = coatOneColor.filter(coat => coat === "-265px -2025px").length;
+    
+    if (calicoCount === 1) {
+      congrats.textContent = "Congratulations! Your litter contains a calico.";}
+      else if ( calicoCount > 1) {congrats.textContent = "Congratulations! Your litter contains multiple calicos.";}
+      else { congrats.textContent = "Sorry, there are no calicos in your litter. Press submit again or try different parents.";}
 
 document.getElementById("kitten5").style.backgroundPosition = coatOneColor[0];
 
