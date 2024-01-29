@@ -92,11 +92,6 @@ for (let i = 0; i < 4; i++) {
 
 };
 
-firstKitten.textContent = results[0];
-secondKitten.textContent = results[1];
-thirdKitten.textContent = results[2];
-fourthKitten.textContent = results[3];
-
 
 document.getElementById("kitten1").style.backgroundPosition = results[0];
 
